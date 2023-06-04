@@ -3,7 +3,7 @@ import { useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
-import FormUser from '../../crud-node/src/components/FormUser'
+import FormUser from './components/FormUser'
 
 function App() {
     const [showForm, setShowForm] = useState(false)
