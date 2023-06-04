@@ -6,6 +6,7 @@
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #0c134f4f;
@@ -47,14 +48,18 @@ input{
 }
 
 .btn__close-width{
-    position: absolute;
-    top: -1em;
-    right: -1em;
+    
     background-color: transparent;
     color: rgb(192, 44, 25);
     font-size: 1.3em;
     transition: color 0.3s ease-in-out;
     display: none;
+    
+}
+.ar{
+    width: 300px;
+    display: flex;
+    justify-content: end;
 }
 
 .btn__close-width:hover{

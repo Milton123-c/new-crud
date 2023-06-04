@@ -99,8 +99,10 @@ import '../../node_modules/alertifyjs/build/css/alertify.css'
     <section className={showForm ? 'form open__form' : 'form'}>
         <button onClick={handleShowNavbar} className='btn__close'><i className='bx bx-x-circle'></i></button>
        
+        <article className='ar'>
         <button onClick={handleShowNavbar} className='btn__close-width'><i className='bx bx-x-circle'></i></button>
 
+        </article>
         <form className="form__container" onSubmit={handleSubmit(submit)}>
     
      
