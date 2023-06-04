@@ -6,7 +6,7 @@ import {useSelector, useDispatch} from 'react-redux';
 import {useEffect, useRef, useState} from 'react';
 import {objects} from '../utils/resetsForm'; 
 import {addUser} from '../store/slice/updateUser.slice'
-import alertify from 'alertifyjs';
+import alertify from 'alertify';
 
 
  const FormUser = ({setShowForm, showForm, setUpdate, setSetUpdate}) => {
