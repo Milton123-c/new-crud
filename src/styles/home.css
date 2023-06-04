@@ -1,0 +1,26 @@
+
+.home__container{
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    padding: 1em 1em 2em 1em;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100vw;
+    height: calc(100vh - 75px);
+    margin-top: 70px;
+    overflow-y: auto ;
+}
+
+.home__user{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    background-color: #07095265;
+    backdrop-filter: blur(3px);
+    padding: 1em;
+}
+

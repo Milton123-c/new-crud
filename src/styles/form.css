@@ -1,0 +1,123 @@
+
+.form{
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c134f4f;
+    backdrop-filter: blur(10px);
+    transition: left 0.5s ease-in-out;
+    z-index: 1924;
+}
+
+.open__form{
+    left: 0;
+    transition: left 0.5s ease-in-out;
+}
+
+.form__container{
+    display: grid;
+    gap: 1em;
+    font-size: 1.3em;
+    justify-items: center;
+    align-content: center;
+}
+
+.form__group{
+    display: grid;
+    color: rgb(245, 241, 241);
+}
+
+input{
+    padding: 0.5em;
+    border-radius: 0.2em;
+    width: 250px;
+}
+
+.btn__close{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    background-color: inherit;
+}
+
+.btn__close-width{
+    position: absolute;
+    top: -1em;
+    right: -1em;
+    background-color: transparent;
+    color: rgb(192, 44, 25);
+    font-size: 1.3em;
+    transition: color 0.3s ease-in-out;
+    display: none;
+}
+
+.btn__close-width:hover{
+    color: beige;
+}
+
+.btn__close i{
+    color: rgb(192, 44, 25);
+    font-size: 2em;
+    transition: color 0.3s ease-in-out;
+}
+
+.btn__close:hover i{
+    color: beige;
+}
+
+.form__buttom{
+    background-color: #200c4f;
+    color: #fff; 
+    font-size: 0.8em;
+    padding: 0.4em 0.5em;
+    border: 1px solid wheat;
+    border-radius: 0.3em;
+    transition: background-color 0.3s ease-in-out
+    
+}
+
+.form__buttom:hover{
+    background-color: #2f0c4f;
+}
+
+.form__title{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.2em;
+    border-bottom: 1px solid white;
+}
+
+.alertify-notifier{
+    z-index: 9999999999999999;
+}
+
+.error__email{
+    color: rgb(239, 237, 243);
+    background-color: #FF0060;
+    padding: 0.5em;
+    font-size: 0.7em;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.error__email-open{
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+@media (min-width: 1000px) {
+    .btn__close{
+        display: none;
+    }
+    .btn__close-width{
+        display: block;
+    }
+}

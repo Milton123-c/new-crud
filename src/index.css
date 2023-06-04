@@ -1,0 +1,75 @@
+/* RESETS */
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url('https://images.pexels.com/photos/2131614/pexels-photo-2131614.jpeg?cs=srgb&dl=pexels-quang-nguyen-vinh-2131614.jpg&fm=jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+h1, h2, h3, h4, p, ul{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+input {
+    outline: 0;
+    border: none;
+}
+button{
+    border: none;
+}
+
+img{
+    display: block;
+}
+
+.alertify .ajs-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999999999999999999999999;
+   }
+ .alertify .ajs-modal button{
+     background-color: #0079FF;
+     color: #fff;
+ }
+  
+   .ajs-dialog{
+       background: #1b1485 !important;
+     /*verde para el body*/
+
+   }
+   .ajs-header{
+       background: #0C134F !important;
+     /*azul para el header*/
+   }
+   .ajs-footer{
+       background: #0C134F !important;
+     /*rojo para el footer*/
+   }
+   .alertify .ajs-notifier {
+    z-index: 9999999999999999999999999999999999999999999999999;
+  }
+   .ajs-success {
+     background: #1b1485 !important;
+   
+   }
+ 
+   .ajs-error{
+     background: #d25812 !important;
+
+     
+   }

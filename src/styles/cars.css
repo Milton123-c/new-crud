@@ -1,0 +1,99 @@
+.card__container{
+    background-color: #40128b57;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    width: 350px;
+    border-radius: 0.5em;
+    backdrop-filter: blur(5px);
+    padding-bottom: 1em;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.card__container:hover{
+    transform: translateY(-0.5em);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.card > article{
+    padding: 0 1em;
+    font-size: 1.2em;
+    
+}
+.card > article:nth-child(2){
+    display: grid;
+    gap: 0.5em;
+}
+.card > article:nth-child(3){
+    display: grid;
+    gap: 0.5em;
+}
+
+.card > article  p:nth-child(1) {
+    color: gray;
+    font-size: 1.3em;
+
+}
+
+.card__title{
+    background-color: #10009e59;
+    padding: 0.7em;
+    display: flex;
+    gap: 0.5em;
+     
+}
+
+.card__title p {
+    font-size: 1.2em;
+    font-weight: 800;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue}
+
+.card__email{
+    padding: 0 1em;
+}
+.card__date{
+    padding: 0 1em;
+}
+.card__button{
+    padding: 0 1em;
+    display: flex;
+    gap: 1em;
+    justify-content: end;
+}
+
+.card__button-delete{
+    background-color: #FC4F00;
+    color: #fff;
+    width: 2em;
+    aspect-ratio: 1;
+    font-size: 1em;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card__button-delete:hover{
+    transform: scale(1.1);
+}   
+
+.card__button-update{
+    width: 2em;
+    aspect-ratio: 1;
+    font-size: 1em;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card__button-update:hover{
+    transform: scale(1.1);
+}   
+
+@media (min-width: 768px) {
+    .card__container{
+        width: 350px;
+    }
+}
