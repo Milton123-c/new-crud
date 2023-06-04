@@ -25,6 +25,7 @@
     font-size: 1.3em;
     justify-items: center;
     align-content: center;
+    position: relative;
 }
 
 .form__group{

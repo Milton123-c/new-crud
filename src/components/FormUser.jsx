@@ -6,7 +6,8 @@ import {useSelector, useDispatch} from 'react-redux';
 import {useEffect, useRef, useState} from 'react';
 import {objects} from '../utils/resetsForm'; 
 import {addUser} from '../store/slice/updateUser.slice'
-import alertify from 'alertify';
+import alertify from 'alertifyjs';
+import '../../node_modules/alertifyjs/build/css/alertify.css'
 
 
  const FormUser = ({setShowForm, showForm, setUpdate, setSetUpdate}) => {
@@ -97,11 +98,12 @@ import alertify from 'alertify';
   return (
     <section className={showForm ? 'form open__form' : 'form'}>
         <button onClick={handleShowNavbar} className='btn__close'><i className='bx bx-x-circle'></i></button>
+       
+        <button onClick={handleShowNavbar} className='btn__close-width'><i className='bx bx-x-circle'></i></button>
 
         <form className="form__container" onSubmit={handleSubmit(submit)}>
     
-            <button onClick={handleShowNavbar} className='btn__close-width'><i className='bx bx-x-circle'></i></button>
-
+     
             <h2 className="form__title">User <i className='bx bxs-user-pin' ></i></h2>
 
             <article className="form__group">
